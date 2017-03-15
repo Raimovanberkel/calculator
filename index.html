@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<title>Calculator</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<script type="text/javascript" src="calculator.js"></script>
+
+</head>
+<body>
+<h2>Calculator</h2>
+	<main>
+		<div id="ContainerTop">
+			<input id="DisplaySom" type="text" readonly="">
+			<div class="Row">
+				<button class="clear" onclick="Calculator.clear();">C</button>
+				<input id="Display" type="text" readonly="">
+			</div>
+		</div>
+		<div id="Container">
+			
+			<div class="Row">
+				<button class="number" onclick="Calculator.add('1');">1</button>
+				<button class="number" onclick="Calculator.add('2');">2</button>
+				<button class="number" onclick="Calculator.add('3');">3</button>
+				<button class="teken" onclick="Calculator.operator('+');">+</button>
+			</div>
+
+						<div class="Row">
+				<button class="number" onclick="Calculator.add('4');">4</button>
+				<button class="number" onclick="Calculator.add('5');">5</button>
+				<button class="number" onclick="Calculator.add('6');">6</button>
+				<button class="teken" onclick="Calculator.operator('/');">÷</button>
+			</div>
+			<div class="Row">
+				<button class="number" onclick="Calculator.add('7');" >7</button>
+				<button class="number" onclick="Calculator.add('8');">8</button>
+				<button class="number" onclick="Calculator.add('9');">9</button>
+				<button class="teken" onclick="Calculator.operator('*');">x</button>
+			</div>
+
+				<div class="Row">
+				<button class="number" onclick="Calculator.add('0');">0</button>
+				<button class="number" onclick="Calculator.add('.');">,</button>
+				<button class="is" onclick="Calculator.calculate();">=</button>
+				<button class="teken" onclick="Calculator.operator('-');">-</button>
+			</div>
+			</div>
+		</main>
+	</div>
+</div>
+</body>
+</html>
